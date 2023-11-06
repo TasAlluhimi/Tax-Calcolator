@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+rel="stylesheet"
+/>
+
+    <title>Tax</title>
+</head>
+<body>
+
+    <div class="container text-center mt-5">
+        <h1>Welcome to Tax Calcolator</h1>
+    </div>
+
+      <!-- tax data -->
+
+    <div class="container mt-5 w-50 main-con d-flex flex-column justify-content-center" style="background-color: rgba(192, 192, 192, 0.289);">
+    <form>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="total" class="form-control" />
+          <label class="form-label w-100" for="total">Total bill</label>
+        </div>
+      
+        <h4 id="bill-tax"></h4>
+        <!-- Password input -->
+        <div class="form-outline mb-4 mt-5">
+          <input type="text" id="ppl" class="form-control" />
+          <label class="form-label w-100" for="ppl">Number of people</label>
+        </div>
+      
+        <h4 id="equaly"></h4>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+      
+        <!-- Submit button -->
+        <button type="button" id="calculate" class="btn btn-block mt-5 w-75" style="background-color: pink;">calculate</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
